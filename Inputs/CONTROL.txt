@@ -1,0 +1,27 @@
+BatchNum	1001
+PatchModel	1
+Resolution	5
+LandType	0
+MaxHabitats	9
+SpeciesDist	0
+DistResolution	0
+Reproduction	1
+RepSeasons	1
+StageStruct	0
+Stages	0
+Transfer	1
+ParameterFile	parameterfile.txt
+LandFile	LandFile_ashdyn.txt
+StageStructFile	NULL
+EmigrationFile	emigration.txt
+TransferFile	transfer.txt
+SettlementFile	settlement.txt
+GeneticsFile	genetic.txt
+InitialisationFile	initiation.txt
+VirtualEcolFile	virtecolfile.txt
+
+ANY ADDITIONAL LINES ARE NOT READ, AND CAN THEREFORE BE USED FOR COMMENTS
+
+RangeShifter v2.0 Control File for a patch-based model of a non-structured sexual population dispersing by SMS
+
+

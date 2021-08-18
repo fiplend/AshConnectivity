@@ -1,0 +1,2 @@
+NChromosomes	1
+NLoci	15 
