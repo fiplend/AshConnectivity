@@ -141,7 +141,7 @@ Merge_genetic_data <- function(IBD) {
 Genetic <- Merge_genetic_data(IBD = "D:/Models_Outputs/data_analysis/IBD_fst")
 Genetic_Josts <- Merge_genetic_data(IBD = "D:/Models_Outputs/data_analysis/IBD_Jost") # specifiy folder where IBD estimates are stored
   
-### proportion of successful disperses ####
+### proportion of successful dispersers ####
 
 Demographic_dispersers <-
   subset(Demographic, Demographic$DistMoved > 0)
@@ -169,7 +169,7 @@ Demographic_dispersers <-
 
 ##  partitioning of variance ####
 
-# Fit a single anova for the response variable, and the fixed effects should be (in order):
+# Fit a single anova for the response variable, and the fixed effects should be:
 #   Disease level (D)
 # Mgt response level (M)
 # D * M
@@ -194,12 +194,8 @@ Demographic_dispersers <-
 # 5km ID * Landscape replicate 
 # 5km ID * Removal replicate
 # 
-# The terms from '10km ID' onwards are in reality the random effects in the model, but for the purposes of partitioning variance they should be fitted as fixed effects.
-# 
-
 
 ### disperses and isolated patches ####
-
 
 Demographic_dispersers$K <- factor(Demographic_dispersers$K)
 Demographic_dispersers$DP <- factor(Demographic_dispersers$DP)
