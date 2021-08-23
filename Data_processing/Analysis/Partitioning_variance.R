@@ -32,28 +32,28 @@ Merge_Demographic_data <- function() {
   Indi <-
     Combine_data(mypath = "D:/Models_Aug2020/data_analysis/Individual_level",
                  mypattern = "indi.csv",
-                 sep = ",")
+                 sep = ",")# individual level data
   Isolated_patch <-
     Combine_data(mypath = "D:/Models_Aug2020/data_analysis/Isolated_patch",
                  mypattern = ".csv",
-                 sep = ",")
+                 sep = ",") # data on isolated patches
   pop_size <-
     Combine_data(mypath = "D:/Models_Aug2020/data_analysis/pop_size",
                  mypattern = ".csv",
-                 sep = ",")
+                 sep = ",") # population size data
   
   
   Batch <-
-    read.csv("D:/Models_Aug2020/data_analysis/Models/B.csv", header = T)
+    read.csv("D:/Models_Aug2020/data_analysis/Models/B.csv", header = T) #description of batches (each landscape)
   Land <-
     read.csv("D:/Models_Aug2020/data_analysis/Models/Land.csv",
-             header = T)
+             header = T) #landscape removal replicate
   Landscape_analysis <-
     read.csv("D:/Models_Aug2020/data_analysis/Models/Landscape_analysis.csv",
-             header = T)
+             header = T) #landscape data - e.g. number patches
   Simulation <-
     read.csv("D:/Models_Aug2020/data_analysis/Models/sims.csv",
-             header = T)
+             header = T) # species data - changed per sim number
   
   
   
